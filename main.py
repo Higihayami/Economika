@@ -7,12 +7,18 @@ from sympy import diff, symbols, cos, sin
 #Ценовая дискриминация первой степени
 print ("Ценовая дискриминация первой степени")
 warnings.filterwarnings('ignore')
-p = 40
-p2 = 0
-q = 0
-q2 = 4
-a = 5
-n = 4
+print("Введите цену 1")
+p = int(input())
+print("Введите цену 2")
+p2 = int(input())
+print("Введите количество товара 1")
+q = int(input())
+print("Введите количество товара 2")
+q2 = int(input())
+print("Введите надбавку")
+a = int(input())
+print("Введите количество потребителей")
+n = int(input())
 Tq = p*q+a
 print("Двухставочный тариф равен ", Tq)
 
@@ -53,17 +59,25 @@ print("\n")
 #Ценовая дискриминация второй степени
 
 print("Ценовая дискриминация второй степени")
-popt1 = 90
-popt2 = 50
+print("Введите цену 1 для категории 1")
+popt1 = int(input())
+print("Введите цену 2 для категории 1")
+popt2 = int(input())
 
-proz1 = 150
-proz2 = 90
+print("Введите количество товара 1 для категории 1")
+proz1 = int(input())
+print("Введите количество товара 2 для категории 1")
+proz2 = int(input())
 
-qopt1 = 10
-qopt2 = 20
+print("Введите цену 1 для категории 2")
+qopt1 = int(input())
+print("Введите цену 2 для категории 2")
+qopt2 = int(input())
 
-qroz1 = 5
-qroz2 = 40
+print("Введите количество товара 1 для категории 2")
+qroz1 = int(input())
+print("Введите количество товара 2 для категории 2")
+qroz2 = int(input())
 
 kopt = ((popt1 - popt2)/(qopt1-qopt2))
 kroz = ((proz1 - proz2)/(qroz1-qroz2))
@@ -135,16 +149,31 @@ print(f"\n")
 #Ценовая дискриминация третьей степени
 
 print("Ценовая дискриминация третьей степени")
-p = 40
-p2 = 1
-q = 10
-q2 = 100
-price = 45
-price2 = 0
-quantity = 15
-quantity2 = 120
-a = 5
-n = 4
+print("Введите цену 1 для категории 1")
+p = int(input())
+print("Введите цену 2 для категории 1")
+p2 = int(input())
+
+print("Введите количсетво товара 1 для категории 1")
+q = int(input())
+print("Введите количсетво товара 2 для категории 1")
+q2 = int(input())
+
+print("Введите цену 1 для категории 2")
+price = int(input())
+print("Введите цену 2 для категории 2")
+price2 = int(input())
+
+print("Введите количсетво товара 1 для категории 2")
+quantity = int(input())
+print("Введите количсетво товара 2 для категории 2")
+quantity2 = int(input())
+
+print("Введите надбавку")
+a = int(input())
+
+print("Введите количество потребителей")
+n = int(input())
 Tq = p*q+a
 print("Двухставочный тариф равен ", Tq)
 
@@ -175,6 +204,3 @@ plt.plot(-1 + 2*y, y, color = "black")
 plt.autoscale(enable = True, axis = 'x', tight= True)
 plt.autoscale(enable = True, axis = 'y', tight= True)
 plt.show()
-
-
-
